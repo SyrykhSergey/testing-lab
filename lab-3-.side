@@ -1,0 +1,431 @@
+{
+  "id": "615ee902-a99c-4fa6-885f-3d9c527ac8ee",
+  "version": "2.0",
+  "name": "lab-3-",
+  "url": "http://localhost:5000/",
+  "tests": [{
+    "id": "ef04579b-5743-41a2-a529-c95a1b496b94",
+    "name": "test-positive-simple-data",
+    "commands": [{
+      "id": "a557c78f-6649-4bf3-9594-cc3399e5442f",
+      "comment": "Проверка ввода и получения результата на простых данных",
+      "command": "open",
+      "target": "http://localhost:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a702faf-7dc9-4500-a672-3736c7f9c47e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1242x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a679928-4c96-4c37-a63a-031d08e2a7a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=text-input",
+      "targets": [
+        ["id=text-input", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input", "css:finder"],
+        ["xpath=//input[@id='text-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0ef8ba2-f4cd-43bd-9b78-ab8621de7dda",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input",
+      "targets": [
+        ["id=text-input", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input", "css:finder"],
+        ["xpath=//input[@id='text-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "77418b2e-8d49-45fc-b09f-b50500cac509",
+      "comment": "",
+      "command": "click",
+      "target": "id=second-text-input",
+      "targets": [
+        ["id=second-text-input", "id"],
+        ["name=second-text-input", "name"],
+        ["css=#second-text-input", "css:finder"],
+        ["xpath=//input[@id='second-text-input']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f862cd6e-be02-459a-9190-89344f00cc43",
+      "comment": "",
+      "command": "type",
+      "target": "id=second-text-input",
+      "targets": [
+        ["id=second-text-input", "id"],
+        ["name=second-text-input", "name"],
+        ["css=#second-text-input", "css:finder"],
+        ["xpath=//input[@id='second-text-input']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1,0 2,1"
+    }, {
+      "id": "6ea774ac-2aea-4b73-bebf-0f2b58def190",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Отправить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "516c805a-5340-4f31-b015-5e9353b1dda4",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'результат: [0, 1, 2]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b2b10df-daae-49f2-a80f-1953b80eb82a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'результат: [0, 1, 2]')]", "xpath:innerText"]
+      ],
+      "value": "результат: [0, 1, 2]"
+    }]
+  }, {
+    "id": "767e1f14-4573-419e-9689-42c6d83aa3ff",
+    "name": "test-positive-min-num-courses",
+    "commands": [{
+      "id": "1079da58-346b-4c2e-8219-23f7be336da6",
+      "comment": "Проверка ввода и получения результата",
+      "command": "open",
+      "target": "http://localhost:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e18d9ac-d6e0-46d0-92eb-ca0c02aa8815",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1242x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70884a07-303b-487c-8115-444edf39efe2",
+      "comment": "",
+      "command": "click",
+      "target": "id=text-input",
+      "targets": [
+        ["id=text-input", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input", "css:finder"],
+        ["xpath=//input[@id='text-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98cd1c90-9847-4568-9841-f9619b047e4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input",
+      "targets": [
+        ["id=text-input", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input", "css:finder"],
+        ["xpath=//input[@id='text-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "bdad42cf-db2a-4c76-bb69-4ceef8fbb4dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=second-text-input",
+      "targets": [
+        ["id=second-text-input", "id"],
+        ["name=second-text-input", "name"],
+        ["css=#second-text-input", "css:finder"],
+        ["xpath=//input[@id='second-text-input']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f511c33-b360-43aa-85ea-ee3634c7d145",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Отправить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61e30350-fe5e-4dd1-942b-d8332674857a",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'результат: [0]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fea743d-ebfa-4cbd-89de-d3a285354e1d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'результат: [0]')]", "xpath:innerText"]
+      ],
+      "value": "результат: [0]"
+    }]
+  }, {
+    "id": "9ce60eba-d2ca-4027-b8a6-6c06ff4ddd98",
+    "name": "test-bad-data",
+    "commands": [{
+      "id": "84b72647-e379-42ab-8d45-dee75175b781",
+      "comment": "Проверка отображения результата при введенных неверных данных",
+      "command": "open",
+      "target": "http://localhost:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82f2c751-5cc6-4a7f-b604-1ba3acd7bf71",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1242x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4439c1ad-d3bb-40e7-9e6e-0f760b0e8f79",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Отправить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d6279e1-acf9-48c8-a2e3-b0c3108e2fca",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ошибка введенных данных')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "399d2d33-5d82-4f4c-bd74-040d2f0d1726",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ошибка введенных данных')]", "xpath:innerText"]
+      ],
+      "value": "Ошибка введенных данных"
+    }]
+  }, {
+    "id": "db0aad80-a82f-4580-8dca-770d0de483d0",
+    "name": "test-input-forms",
+    "commands": [{
+      "id": "f69ff201-b25e-498d-938c-32d2d9bea1c7",
+      "comment": "Проверка возможности ввода текста в формы",
+      "command": "open",
+      "target": "http://localhost:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fecf495-f173-46a8-a44a-d879bcfaadf0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1244x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "821aee18-b517-4097-bdb5-703c8bac8697",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=text-input",
+      "targets": [
+        ["id=text-input", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input", "css:finder"],
+        ["xpath=//input[@id='text-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23e45da4-5595-463a-8abe-aa41cd890614",
+      "comment": "",
+      "command": "click",
+      "target": "id=second-text-input",
+      "targets": [
+        ["id=second-text-input", "id"],
+        ["name=second-text-input", "name"],
+        ["css=#second-text-input", "css:finder"],
+        ["xpath=//input[@id='second-text-input']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "100286c2-01cb-4bb8-ac62-2c526051d294",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=second-text-input",
+      "targets": [
+        ["id=second-text-input", "id"],
+        ["name=second-text-input", "name"],
+        ["css=#second-text-input", "css:finder"],
+        ["xpath=//input[@id='second-text-input']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bd2cf5b7-195f-4263-8684-6ccc3aa345fe",
+    "name": "test-simple-check-ui",
+    "commands": [{
+      "id": "ddcc41bf-b926-4a50-aa3a-d312ed339d45",
+      "comment": "Проверка наличия элементов на странице ввода",
+      "command": "open",
+      "target": "http://localhost:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c815f750-e04c-472b-8453-2e77bafa3b1e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1248x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee53b48e-e18b-4492-b250-1fead406dabb",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70081024-dae7-44fd-a2c2-7bbe80818596",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Enter Two Values')]", "xpath:innerText"]
+      ],
+      "value": "Enter Two Values"
+    }, {
+      "id": "52c165be-3f23-4eac-8b45-8f18c7f9923a",
+      "comment": "",
+      "command": "click",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Введите данные:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf489e6-ddaf-46bd-bdfc-5e4e14a60f97",
+      "comment": "",
+      "command": "click",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Введите данные:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25388ab2-092b-4980-a08f-b32ecffebe9b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Введите данные:')]", "xpath:innerText"]
+      ],
+      "value": "Введите данные:"
+    }, {
+      "id": "00c1f29d-6c12-4988-b361-3e60dd7801f5",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=text-input",
+      "targets": [
+        ["id=text-input", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input", "css:finder"],
+        ["xpath=//input[@id='text-input']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf611f27-7f05-4b4f-9a19-293534c74b8e",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=second-text-input",
+      "targets": [
+        ["id=second-text-input", "id"],
+        ["name=second-text-input", "name"],
+        ["css=#second-text-input", "css:finder"],
+        ["xpath=//input[@id='second-text-input']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1e2f111-754b-4efc-96dc-17bf17c0454f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Отправить')]", "xpath:innerText"]
+      ],
+      "value": "Отправить"
+    }]
+  }],
+  "suites": [{
+    "id": "558fa8bc-c4ac-4505-8221-99529e1fe55c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:5000/"],
+  "plugins": []
+}
